@@ -3,18 +3,28 @@ Section: ruby
 Priority: optional
 Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
 Uploaders: Balasankar C <balasankarc@autistici.org>
-Build-Depends: debhelper (>= 7.0.50~), gem2deb, ruby-rspec, rake
-Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 7.0.50~),
+               gem2deb,
+               rake,
+               ruby-omniauth,
+               ruby-rack-test,
+               ruby-rspec
+Standards-Version: 3.9.6
 Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-omniauth-shibboleth.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ruby-extras/ruby-omniauth-shibboleth.git;a=summary
-Homepage: 
-Testsuite: autopkgtest
+Homepage: https://shibboleth.net/
+Testsuite: autopkgtest-pkg-ruby
 XS-Ruby-Versions: all
 
 Package: ruby-omniauth-shibboleth
 Architecture: all
 XB-Ruby-Versions: ${ruby:Versions}
-Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter
-# omniauth (>= 1.0.0), rack-test (>= 0, development), rake (>= 0, development), rspec (>= 2.8, development)
-Description: OmniAuth Shibboleth strategies for OmniAuth 1.x
- OmniAuth Shibboleth strategies for OmniAuth 1.x
+Depends: ruby | ruby-interpreter, ${misc:Depends}, ${shlibs:Depends}, ruby-omniauth
+Description: OmniAuth Shibboleth strategies for OmniAuth
+ OmniAuth Shibboleth strategy is an OmniAuth strategy for authenticating 
+ through Shibboleth (SAML)
+ .
+ OmniAuth Shibboleth strategy uses the 'auth hash' for providing user 
+ attributes passed by Shibboleth SP. It enables developers to use Shibboleth 
+ and the other authentication methods, including local auth, together in one 
+ application.

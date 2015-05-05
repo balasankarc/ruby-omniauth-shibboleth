@@ -1,5 +1,5 @@
-ruby-omniauth-shibboleth (1.2.0-1) UNRELEASED; urgency=medium
+ruby-omniauth-shibboleth (1.2.0-1) unstable; urgency=medium
 
-  * Initial release (Closes: #nnnn)
+  * Initial release (Closes: #784333)
 
- -- Balasankar C <balasankarc@autistici.org>  Tue, 05 May 2015 19:36:42 +0530
+ -- Balasankar C <balasankarc@autistici.org>  Tue, 05 May 2015 18:15:32 +0530
