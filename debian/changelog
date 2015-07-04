@@ -1,3 +1,9 @@
+ruby-omniauth-shibboleth (1.2.1-1) unstable; urgency=medium
+
+  * Upstream update 
+
+ -- Balasankar C <balasankarc@autistici.org>  Sun, 05 Jul 2015 00:03:47 +0530
+
 ruby-omniauth-shibboleth (1.2.0-1) unstable; urgency=medium
 
   * Initial release (Closes: #784333)
