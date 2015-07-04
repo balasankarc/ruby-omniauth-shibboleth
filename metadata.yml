@@ -1,14 +1,14 @@
 --- !ruby/object:Gem::Specification
 name: omniauth-shibboleth
 version: !ruby/object:Gem::Version
-  version: 1.2.0
+  version: 1.2.1
 platform: ruby
 authors:
 - Toyokazu Akiyama
 autorequire: 
 bindir: bin
 cert_chain: []
-date: 2014-11-08 00:00:00.000000000 Z
+date: 2015-06-22 00:00:00.000000000 Z
 dependencies:
 - !ruby/object:Gem::Dependency
   name: omniauth
@@ -74,6 +74,7 @@ extensions: []
 extra_rdoc_files: []
 files:
 - Gemfile
+- Gemfile.lock
 - README.md
 - Rakefile
 - lib/omniauth-shibboleth.rb
@@ -102,11 +103,10 @@ required_rubygems_version: !ruby/object:Gem::Requirement
       version: '0'
 requirements: []
 rubyforge_project: 
-rubygems_version: 2.3.0
+rubygems_version: 2.4.5
 signing_key: 
 specification_version: 4
 summary: OmniAuth Shibboleth strategies for OmniAuth 1.x
 test_files:
 - spec/omniauth/strategies/shibboleth_spec.rb
 - spec/spec_helper.rb
-has_rdoc: 
