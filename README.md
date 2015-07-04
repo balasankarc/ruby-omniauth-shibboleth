@@ -1,5 +1,8 @@
 # OmniAuth Shibboleth strategy
 
+[![Gem Version](http://img.shields.io/gem/v/omniauth-shibboleth.svg)](http://rubygems.org/gems/omniauth-shibboleth)
+[![Build Status](https://travis-ci.org/toyokazu/omniauth-shibboleth.svg?branch=master)](https://travis-ci.org/toyokazu/omniauth-shibboleth)
+
 OmniAuth Shibboleth strategy is an OmniAuth strategy for authenticating through Shibboleth (SAML). If you do not know OmniAuth, please visit OmniAuth wiki.
 
 https://github.com/intridea/omniauth/wiki
@@ -28,6 +31,11 @@ https://github.com/toyokazu/omniauth-shibboleth/issues
 ### Setup Shibboleth Strategy
 
 To use OmniAuth Shibboleth strategy as a middleware in your rails application, add the following file to your rails application initializer directory.
+
+    % vi config/initializer/omniauth.rb
+    Rails.application.config.middleware.use OmniAuth::Builder do
+      provider :shibboleth
+    end
 
     % vi config/initializer/omniauth.rb
     Rails.application.config.middleware.use OmniAuth::Builder do
